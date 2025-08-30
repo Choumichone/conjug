@@ -4,12 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot Conjugaison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        #chatbot {
+            width: 80%;
+            max-width: 600px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        #chatbot-box {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            height: 300px;
+            overflow-y: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bienvenue dans le Chatbot de Conjugaison !</h1>
+
     <div id="chatbot">
-        <!-- Ton chatbot ici -->
-        <script src="chatbot.js"></script>
+        <h1>Chatbot de Conjugaison</h1>
+        <div id="chatbot-box">
+            <!-- Le contenu du chatbot apparaîtra ici -->
+        </div>
+        <input type="text" id="userInput" placeholder="Posez une question de conjugaison..." />
+        <button onclick="startChat()">Envoyer</button>
     </div>
+
+    <!-- Lien vers le fichier JavaScript -->
+    <script src="chatbot.js"></script>
+
 </body>
 </html>
+
